@@ -57,7 +57,7 @@ INSERT INTO Customer VALUES
 ('C002', 'Nguyen Van B', 'b@gmail.com', NULL, 'HN'),
 ('C003', 'Nguyen Van C', 'c@gmail.com', '0234567890', 'HN'),
 ('C004', 'Nguyen Van D', 'd@gmail.com', '0345678912', 'Da Nang'),
-('C005', 'Nguyen Van E', 'e@gmail.com', NULL, 'Hue');
+('C005', 'Nguyen Van E', 'e@gmail.com', '0456789123', 'Hue');
 
 INSERT INTO Orders VALUES
 ('DH001', '2026-04-28', '30000000', 'C001'),
