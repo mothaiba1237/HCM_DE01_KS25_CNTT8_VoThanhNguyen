@@ -92,3 +92,19 @@ JOIN Order_Detail od ON p.product_id = od.product_id
 WHERE od.order_id = 'DH001';
 
 
+SELECT 
+CONCAT(customer_id, ' | ', customer_name, ' | ', customer_email) AS customer_info
+FROM Customer 
+WHERE customer_id IN(
+	SELECT customer_id
+    FROM Orders
+    WHERE order_id IN(
+		SELECT order_id
+        FROM Order_Detail
+        WHERE product_id = (
+			SELECT product_id
+            FROM Product
+            WHERE product_name =  'MacBook Air M2'
+        )
+    )
+)
